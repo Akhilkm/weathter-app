@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}} </title>
+        <link rel="icon" href="/img/weather-icon.jpg">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script>
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>Use this site to get the weather!</p>
+            <form>
+                <input type="text">
+                <button>Search</button>
+
+                <p id="location"></p>
+                <p id="message"></p>
+                {{!-- <button action="javascript:search();">Search</button> --}}
+            </form>
+        </div>
+
+        {{>footer}}
+
+        <script src="/js/app.js"></script>
+    </body>
+</html>
